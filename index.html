@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07172f">
+  <meta name="description" content="Raio-X gratuito de perfil público do Instagram. Identifique oportunidades de melhoria na sua presença digital.">
+  <title>Raio-X do Instagram | Wendell Soares</title>
+  <style>
+    :root{--navy:#07172f;--navy2:#0b2140;--navy3:#102d50;--blue:#286092;--gold:#f3c85d;--gold2:#ffe29a;--ice:#edf3f9;--muted:#a9b9ca;--line:rgba(190,211,235,.17);--green:#8ed8b0;--red:#ff9e96;--amber:#ffd27b;font-family:Inter,"Segoe UI",Arial,sans-serif;color-scheme:dark}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;padding:24px;background:radial-gradient(ellipse at 8% 88%,rgba(243,200,93,.08),transparent 32%),#030d1d;color:#fff}
+    button,input,select,textarea{font:inherit}button{cursor:pointer}.app{width:min(100%,960px);min-height:650px;margin:0 auto;overflow:hidden;border:1px solid rgba(190,211,235,.2);border-radius:20px;background:linear-gradient(145deg,#0b2140 0%,#07172f 58%,#06152b 100%);box-shadow:0 28px 80px rgba(0,0,0,.32)}
+    .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:17px 24px;border-bottom:1px solid var(--line);background:rgba(2,12,27,.28)}.brand{display:flex;align-items:center;gap:10px}.brand-mark{width:36px;height:36px;display:grid;place-items:center;border:1px solid rgba(243,200,93,.62);border-radius:50%;color:var(--gold);font-size:10px;font-weight:900;letter-spacing:-.7px}.brand-name{font-size:11px;font-weight:850;letter-spacing:.11em}.brand-sub{margin-top:3px;color:#9eb2c9;font-size:7px;font-weight:700;letter-spacing:.16em}.top-tag{color:var(--gold);font-size:8px;font-weight:850;letter-spacing:.14em;text-align:right;white-space:nowrap}
+    .content{padding:30px 34px 28px;min-height:560px}.eyebrow{display:flex;align-items:center;gap:8px;margin:0 0 13px;color:var(--gold);font-size:9px;line-height:1.4;font-weight:850;letter-spacing:.17em;text-transform:uppercase}.eyebrow:before{content:"";width:17px;height:1px;background:var(--gold)}h1{max-width:650px;margin:0 0 13px;color:#fff;font-size:clamp(30px,5.2vw,43px);line-height:1.04;letter-spacing:-.055em;font-weight:850}h1 em,.gold{color:var(--gold);font-style:normal}.lead{max-width:650px;margin:0 0 22px;color:#c2cfdd;font-size:13px;line-height:1.65}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}.radar-scene{position:relative;min-height:245px;overflow:hidden;border:1px solid rgba(190,211,235,.16);border-radius:15px;background:radial-gradient(circle at 65% 45%,rgba(40,96,146,.35),transparent 48%),linear-gradient(145deg,#0b2140,#06152b)}.radar-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(151,185,216,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(151,185,216,.055) 1px,transparent 1px);background-size:25px 25px;mask-image:linear-gradient(90deg,transparent,#000 25%,#000)}.radar-circle{position:absolute;right:50px;top:26px;width:175px;height:175px;border:1px solid rgba(243,200,93,.48);border-radius:50%;box-shadow:0 0 0 22px rgba(243,200,93,.035),0 0 0 45px rgba(243,200,93,.025)}.radar-circle:before,.radar-circle:after{content:"";position:absolute;background:rgba(243,200,93,.2)}.radar-circle:before{left:50%;top:0;width:1px;height:100%}.radar-circle:after{top:50%;left:0;width:100%;height:1px}.radar-sweep{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,transparent 0 76%,rgba(243,200,93,.22) 94%,transparent 100%);animation:spin 8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.radar-dot{position:absolute;width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 14px var(--gold)}.radar-dot.a{right:92px;top:72px}.radar-dot.b{right:160px;top:145px;background:#86c9ef;box-shadow:0 0 12px #86c9ef}.radar-copy{position:absolute;left:18px;bottom:17px;max-width:180px}.radar-copy strong{display:block;color:#fff;font-size:13px}.radar-copy span{display:block;margin-top:6px;color:#9eb5cc;font-size:8px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase}.radar-label{position:absolute;right:14px;bottom:15px;color:#b9c9d9;font-size:7px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:20px 0}.stat{padding:12px;border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.035)}.stat strong{display:block;color:var(--gold);font-size:15px}.stat span{display:block;margin-top:5px;color:#aebfd0;font-size:8px;letter-spacing:.08em;text-transform:uppercase}
+    .primary,.secondary{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:0 17px;border:0;border-radius:8px;font-size:10px;font-weight:850;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}.primary{color:#15233a;background:linear-gradient(135deg,#ffe08a,#efbd4b);box-shadow:0 8px 22px rgba(243,200,93,.18)}.primary:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(243,200,93,.24)}.secondary{color:#d8e3ee;border:1px solid var(--line);background:rgba(255,255,255,.045)}.arrow{font-size:15px;line-height:0}.note{margin:12px 0 0;color:#8fa4bb;font-size:9px;line-height:1.55}
+    .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{min-width:0}.field.full{grid-column:1/-1}.field label,.group-label{display:block;margin-bottom:7px;color:#dbe5ef;font-size:9px;font-weight:850;letter-spacing:.1em;text-transform:uppercase}.field input,.field select,.field textarea{width:100%;min-height:43px;padding:11px 12px;border:1px solid rgba(190,211,235,.2);border-radius:8px;outline:0;color:#fff;background:rgba(255,255,255,.055);font-size:11px}.field textarea{min-height:78px;resize:vertical;line-height:1.5}.field input:focus,.field select:focus,.field textarea:focus{border-color:rgba(243,200,93,.75);box-shadow:0 0 0 3px rgba(243,200,93,.08)}.field input::placeholder,.field textarea::placeholder{color:#71869f}.field select option{color:#fff;background:#0b2140}.field small{display:block;margin-top:6px;color:#8197ae;font-size:8px;line-height:1.5}.form-error{min-height:16px;margin:8px 0;color:#ffb0a8;font-size:10px}.form-actions{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px}.url-input{display:flex;align-items:center;gap:9px;padding:0 12px;border:1px solid rgba(190,211,235,.2);border-radius:8px;background:rgba(255,255,255,.055)}.url-input span{color:var(--gold);font-size:16px}.url-input input{padding-left:0;border:0;background:transparent}.status-box{display:flex;align-items:flex-start;gap:10px;margin:0 0 17px;padding:12px 14px;border:1px solid rgba(243,200,93,.25);border-radius:9px;background:rgba(243,200,93,.06);color:#dce6f0;font-size:10px;line-height:1.5}.status-box strong{display:block;color:#fff;margin-bottom:3px}.status-dot{flex:0 0 7px;width:7px;height:7px;margin-top:4px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px rgba(243,200,93,.5)}.profile-preview{display:flex;align-items:center;gap:12px;margin:0 0 17px;padding:12px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.035)}.avatar{width:48px;height:48px;flex:0 0 48px;overflow:hidden;border:1px solid rgba(243,200,93,.4);border-radius:50%;background:#102d50;display:grid;place-items:center;color:var(--gold);font-size:16px;font-weight:800}.avatar img{width:100%;height:100%;object-fit:cover}.profile-preview strong{display:block;color:#fff;font-size:11px}.profile-preview span{display:block;margin-top:4px;color:#9eb2c9;font-size:9px}.choice-row{display:flex;flex-wrap:wrap;gap:8px}.choice{display:flex;align-items:center;gap:7px;padding:8px 10px;border:1px solid var(--line);border-radius:7px;color:#cbd7e4;background:rgba(255,255,255,.035);font-size:9px}.choice input{accent-color:var(--gold)}.section-card{margin-top:15px;padding:15px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.025)}.section-card h2{margin:0 0 11px;color:#fff;font-size:12px}.section-card p{margin:0 0 12px;color:#a9b9ca;font-size:9px;line-height:1.5}
+    .loading-panel{margin-top:22px;padding:22px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.035)}.loading-orbit{width:42px;height:42px;margin:0 auto 14px;border:2px solid rgba(243,200,93,.2);border-top-color:var(--gold);border-radius:50%;animation:spin .8s linear infinite}.loading-title{text-align:center;color:#fff;font-size:15px;font-weight:850}.loading-copy{text-align:center;color:#aebfd0;font-size:10px;line-height:1.5}.loading-step{display:flex;align-items:center;gap:9px;margin-top:9px;color:#9eb1c5;font-size:10px}.loading-step .dot{width:6px;height:6px;border-radius:50%;background:#46617e}.loading-step.active{color:#fff}.loading-step.active .dot{background:var(--gold);box-shadow:0 0 10px rgba(243,200,93,.6)}
+    .result-head{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}.result-head h1{font-size:clamp(26px,4.5vw,36px);margin:0}.result-sub{margin:7px 0 0;color:#b9c9d9;font-size:10px;line-height:1.6}.score-ring{position:relative;width:112px;height:112px;display:grid;place-items:center;border-radius:50%;background:conic-gradient(var(--gold) var(--score),rgba(190,211,235,.13) 0)}.score-ring:before{content:"";position:absolute;inset:7px;border-radius:50%;background:#0b2140;border:1px solid rgba(255,255,255,.08)}.score-inner{position:relative;text-align:center;color:#fff;font-size:27px;font-weight:900;line-height:1}.score-inner small{display:block;margin-top:4px;color:#9eb1c5;font-size:7px;letter-spacing:.13em;text-transform:uppercase}.coverage{margin:15px 0;padding:10px 12px;border:1px solid var(--line);border-radius:8px;color:#aebfd0;font-size:9px;line-height:1.5;background:rgba(255,255,255,.025)}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}.metric{padding:12px;border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.035)}.metric strong{display:block;color:#fff;font-size:16px;line-height:1.1}.metric span{display:block;margin-top:5px;color:#94a9bf;font-size:7px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.section-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:19px 0 9px;color:#fff;font-size:12px;font-weight:900}.section-title small{color:#8fa4bb;font-size:8px;font-weight:750;letter-spacing:.08em;text-transform:uppercase}.category-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.cat{padding:11px;border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.03)}.cat-top{display:flex;justify-content:space-between;gap:8px;color:#e6edf5;font-size:9px;font-weight:750}.cat-top b{color:var(--gold);font-size:12px}.bar{height:5px;margin-top:9px;overflow:hidden;border-radius:10px;background:rgba(190,211,235,.12)}.bar i{display:block;height:100%;border-radius:10px;background:linear-gradient(90deg,#dca83d,#ffe29a)}.cat small{display:block;margin-top:6px;color:#8fa4bb;font-size:8px}.rec-list{display:grid;gap:8px}.rec{display:grid;grid-template-columns:25px 1fr auto;gap:10px;align-items:start;padding:11px;border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.03)}.rec-num{width:25px;height:25px;display:grid;place-items:center;border-radius:6px;color:#16253a;background:var(--gold);font-size:9px;font-weight:900}.rec h3{margin:0;color:#fff;font-size:10px;line-height:1.4}.rec p{margin:4px 0 0;color:#afc0d1;font-size:9px;line-height:1.5}.severity{padding:4px 6px;border-radius:99px;font-size:7px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}.severity.high{color:#ffb8b0;background:rgba(255,158,150,.11)}.severity.medium{color:#ffdc91;background:rgba(255,210,123,.1)}.severity.low{color:#a9d6f1;background:rgba(134,201,239,.1)}.gold-panel{margin-top:16px;padding:16px;border:1px solid rgba(243,200,93,.45);border-radius:12px;color:#17243a;background:linear-gradient(125deg,#ffe9ad 0%,#f3c85d 55%,#dca83d 100%)}.gold-panel h2{margin:0 0 7px;color:#10233e;font-size:17px}.gold-panel p{margin:0 0 12px;color:#59471f;font-size:10px;line-height:1.5}.gold-panel .primary{color:#fff;background:#102b4c;box-shadow:none}.disclaimer{margin-top:13px;padding-top:10px;border-top:1px solid var(--line);color:#8295aa;font-size:8px;line-height:1.55}.result-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.result-actions button{min-height:36px;padding:0 11px;font-size:9px}.bottombar{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:38px;padding:8px 24px;border-top:1px solid rgba(190,211,235,.11);color:#8297ae;font-size:8px;letter-spacing:.04em;background:rgba(2,12,27,.2)}.bottombar strong{color:#d8c28d;font-weight:750}.hidden{display:none!important}
+    @media(max-width:700px){body{padding:0;background:#07172f}.app{width:100%;min-height:100vh;border:0;border-radius:0}.content{padding:23px 18px;min-height:calc(100vh - 110px)}.topbar{padding:14px 18px}.hero-grid{grid-template-columns:1fr;gap:18px}.radar-scene{min-height:190px}.radar-circle{right:40px;top:12px;width:150px;height:150px}.radar-copy{max-width:155px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.metrics{grid-template-columns:repeat(2,1fr)}.result-head{grid-template-columns:1fr auto}.score-ring{width:90px;height:90px}.category-grid{grid-template-columns:1fr}.rec{grid-template-columns:25px 1fr}.severity{grid-column:2;justify-self:start}.stats{gap:6px}.stat{padding:10px 8px}.stat strong{font-size:13px}.stat span{font-size:7px}}
+    @media print{body{padding:0;background:#fff;color:#12243b}.app{width:100%;max-width:100%;min-height:0;overflow:visible;border:0;border-radius:0;box-shadow:none;background:#fff;color:#12243b}.topbar,.bottombar,.result-actions,.gold-panel{display:none!important}.content{padding:18px;color:#12243b}.result-head h1,.section-title,.cat-top,.rec h3{color:#12243b}.result-sub,.coverage,.cat small,.rec p,.disclaimer{color:#42546a}.score-ring:before{background:#fff}.metric,.cat,.rec,.coverage{border-color:#d7dce2;background:#f7f5ef;break-inside:avoid}.score-inner{color:#12243b}.score-inner small{color:#526276}.bar{background:#e4e7eb}.gold-panel{display:block!important;background:#fff4d5;break-inside:avoid}.gold-panel h2{color:#12243b}.gold-panel p{color:#59471f}.rec-list,.category-grid,.metrics{break-inside:avoid}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand"><div class="brand-mark">WS</div><div><div class="brand-name">WENDELL SOARES</div><div class="brand-sub">ESTRATÉGIA • CONTEÚDO • AUTORIDADE</div></div></div>
+    <div class="top-tag">FERRAMENTA / RAIO-X<br>INSTAGRAM WS</div>
+  </header>
+  <main class="content" id="content" aria-live="polite"></main>
+  <footer class="bottombar"><span>OBSERVAR. DIAGNOSTICAR. MELHORAR.</span><strong>WS / INSTAGRAM</strong></footer>
+</div>
+<script>
+(() => {
+  "use strict";
+  // Após publicar o Worker, informe aqui a URL terminada em /scan.
+  const API_ENDPOINT = "https://raio-x-instagram-ws.dell-soares.workers.dev/scan";
+  const CONTACT_URL = "https://wendellsoares.jor.br/#contato";
+  const state = { username:"", profileType:"empresa", profile:null, report:null, mode:"manual", statusMessage:"" };
+  const content = document.getElementById("content");
+  const esc = value => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+  const num = value => { if (value === "" || value == null) return null; const n = Number(String(value).replace(/\s/g,"").replace(",",".")); return Number.isFinite(n) && n >= 0 ? n : null; };
+  const formatNum = value => value == null ? "Não informado" : new Intl.NumberFormat("pt-BR").format(value);
+
+  function renderWelcome(){
+    content.innerHTML = `
+      <section class="hero-grid">
+        <div>
+          <p class="eyebrow">Presença digital • Perfil público • Diagnóstico gratuito</p>
+          <h1>Seu Instagram tem pontos cegos. Vamos colocar tudo no <em>radar.</em></h1>
+          <p class="lead">O Raio-X identifica oportunidades na apresentação do perfil, clareza da biografia, caminhos de contato, frequência de conteúdo e interações públicas — sem login e sem ferramentas pagas.</p>
+          <div class="stats"><div class="stat"><strong>Gratuito</strong><span>Sem cadastro</span></div><div class="stat"><strong>Público</strong><span>Sem login</span></div><div class="stat"><strong>Híbrido</strong><span>Automático + manual</span></div></div>
+          <button class="primary" data-action="start">Analisar um perfil <span class="arrow">↗</span></button>
+          <p class="note">A coleta automática depende do acesso liberado pelo Instagram. Se houver bloqueio, você poderá completar os dados manualmente.</p>
+        </div>
+        <div class="radar-scene" aria-hidden="true"><div class="radar-grid"></div><div class="radar-circle"><div class="radar-sweep"></div></div><div class="radar-dot a"></div><div class="radar-dot b"></div><div class="radar-copy"><strong>Seu perfil sob uma nova perspectiva.</strong><span>Leitura pública e recomendações orientadas por critérios</span></div><div class="radar-label">Raio-X de perfil / WS</div></div>
+      </section>`;
+  }
+  function renderStart(){
+    content.innerHTML = `
+      <section>
+        <p class="eyebrow">01 / Identificação do perfil</p>
+        <h1>Qual perfil vamos colocar no <em>radar?</em></h1>
+        <p class="lead">Informe o nome de usuário público. Tentaremos ler os dados disponíveis e, depois, você poderá confirmar ou complementar as informações.</p>
+        <div class="form-grid">
+          <div class="field full"><label for="username">USUÁRIO DO INSTAGRAM</label><div class="url-input"><span>@</span><input id="username" autocomplete="off" maxlength="30" placeholder="seuperfil" value="${esc(state.username)}"></div><small>Informe apenas o @, sem senha ou código de acesso.</small></div>
+          <div class="field full"><label for="profile-type">TIPO DE PERFIL</label><select id="profile-type"><option value="empresa" ${state.profileType==="empresa"?"selected":""}>Empresa / negócio</option><option value="profissional" ${state.profileType==="profissional"?"selected":""}>Profissional / especialista</option><option value="loja" ${state.profileType==="loja"?"selected":""}>Loja / e-commerce</option><option value="criador" ${state.profileType==="criador"?"selected":""}>Criador de conteúdo</option><option value="institucional" ${state.profileType==="institucional"?"selected":""}>Instituição / figura pública</option></select></div>
+        </div>
+        <p class="form-error" id="form-error" role="alert"></p>
+        <div class="form-actions"><button class="text-button secondary" data-action="home">← Voltar</button><button class="primary" data-action="scan">Iniciar Raio-X <span class="arrow">↗</span></button></div>
+      </section>`;
+      const input=document.getElementById("username");input.focus();input.addEventListener("keydown",e=>{if(e.key==="Enter")startScan();});
+  }
+  function renderLoading(){
+    content.innerHTML=`<section><p class="eyebrow">Raio-X WS / coleta pública</p><h1>Estamos procurando os sinais do seu <em>perfil.</em></h1><p class="lead">A coleta pode ser limitada pelo próprio Instagram. Se não conseguirmos acessar algum dado, você poderá completar a análise.</p><div class="loading-panel"><div class="loading-orbit"></div><div class="loading-title">Consultando @${esc(state.username)}</div><p class="loading-copy">Nenhuma senha ou sessão será solicitada.</p><div class="loading-step active"><span class="dot"></span>Tentando acessar a página pública</div><div class="loading-step"><span class="dot"></span>Identificando nome, biografia e links disponíveis</div><div class="loading-step"><span class="dot"></span>Preparando a complementação dos dados</div></div></section>`;
+  }
+  async function startScan(){
+    const raw=(document.getElementById("username")?.value||"").trim().replace(/^@/,"");
+    const type=document.getElementById("profile-type")?.value||"empresa";
+    const error=document.getElementById("form-error");
+    if(!/^[A-Za-z0-9._]{1,30}$/.test(raw)){error.textContent="Digite um @ válido, com até 30 caracteres.";return;}
+    state.username=raw;state.profileType=type;state.profile=null;state.mode="manual";state.statusMessage="";renderLoading();
+    if(API_ENDPOINT.startsWith("COLE_AQUI")){
+      state.statusMessage="A coleta automática ainda não foi conectada. Complete os dados manualmente para gerar o diagnóstico.";
+      renderManual();return;
+    }
+    const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),18000);
+    try{
+      const response=await fetch(API_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({username:raw}),signal:controller.signal});
+      const data=await response.json().catch(()=>({}));
+      if(!response.ok)throw new Error(data.error||`Falha na coleta (HTTP ${response.status}).`);
+      state.profile=data.profile||null;
+      state.mode=data.status||"partial";
+      state.statusMessage=data.message||((data.status==="blocked")?"O Instagram não liberou a leitura automática deste perfil.":"Coleta pública concluída; confira os campos encontrados.");
+    }catch(err){
+      state.profile=null;
+      state.mode="unavailable";
+      state.statusMessage=err.name==="AbortError"?"A consulta demorou mais que o limite. Você pode seguir com o preenchimento manual.":"Não foi possível ler o perfil automaticamente. Você pode seguir com o preenchimento manual.";
+    }finally{clearTimeout(timer);renderManual();}
+  }
+  function renderManual(){
+    const p=state.profile||{};const flags=p.known||{};
+    const linkDefault=flags.externalUrl?(p.externalUrl?"yes":"no"):"unknown";
+    const image=p.profileImage||"";
+    const statusTitle=state.mode==="ok"?"Dados públicos encontrados":state.mode==="partial"?"Coleta parcial":state.mode==="blocked"?"Leitura automática limitada":"Complementação manual";
+    content.innerHTML=`
+      <section>
+        <p class="eyebrow">02 / Conferência e complementação</p>
+        <h1>Vamos completar o <em>diagnóstico.</em></h1>
+        <p class="lead">Confira o que foi encontrado. Preencha somente o que estiver faltando; não é necessário informar dados privados.</p>
+        <div class="status-box"><span class="status-dot"></span><div><strong>${esc(statusTitle)}</strong>${esc(state.statusMessage)}</div></div>
+        <div class="profile-preview"><div class="avatar">${image?`<img src="${esc(image)}" alt="Foto pública do perfil" referrerpolicy="no-referrer">`:"@"}</div><div><strong>@${esc(state.username)}${p.fullName?` · ${esc(p.fullName)}`:""}</strong><span>${p.followers!=null?`${formatNum(p.followers)} seguidores`:"Dados públicos ainda não confirmados"}${p.posts!=null?` · ${formatNum(p.posts)} publicações`:""}</span></div></div>
+        <form id="audit-form">
+          <div class="form-grid">
+            <div class="field"><label for="display-name">NOME EXIBIDO</label><input id="display-name" maxlength="80" value="${esc(p.fullName||"")}" placeholder="Nome da marca ou profissional"></div>
+            <div class="field"><label for="followers">SEGUIDORES (opcional)</label><input id="followers" type="number" min="0" step="1" value="${p.followers??""}" placeholder="Ex.: 2500"></div>
+            <div class="field full"><label for="bio">BIOGRAFIA</label><textarea id="bio" maxlength="150" placeholder="Cole aqui a biografia atual do perfil">${esc(p.biography||"")}</textarea><small>Limite do Instagram: 150 caracteres. ${p.biography?"Texto preenchido com dado público encontrado; confira se está atualizado.":"Se a coleta não encontrou a bio, copie o texto do perfil."}</small></div>
+            <div class="field"><label for="link-status">LINK NA BIO</label><select id="link-status"><option value="unknown" ${linkDefault==="unknown"?"selected":""}>Não sei / não verificado</option><option value="yes" ${linkDefault==="yes"?"selected":""}>Sim, existe um link</option><option value="no" ${linkDefault==="no"?"selected":""}>Não existe link</option></select></div>
+            <div class="field"><label for="contact-status">CONTATO OU CHAMADA PARA AÇÃO</label><select id="contact-status"><option value="unknown">Não verificado</option><option value="yes">Sim, está claro</option><option value="no">Não / está pouco claro</option></select></div>
+          </div>
+          <div class="section-card"><h2>Conteúdo recente</h2><p>Informe os dados aproximados dos últimos 30 dias. Se não souber, deixe em branco.</p>
+            <div class="form-grid">
+              <div class="field"><label for="posts-month">PUBLICAÇÕES NOS ÚLTIMOS 30 DIAS</label><input id="posts-month" type="number" min="0" max="300" step="1" placeholder="Ex.: 8"></div>
+              <div class="field"><label for="formats">FORMATOS UTILIZADOS</label><div class="choice-row"><label class="choice"><input type="checkbox" name="format" value="reels"> Reels</label><label class="choice"><input type="checkbox" name="format" value="carrossel"> Carrossel</label><label class="choice"><input type="checkbox" name="format" value="imagem"> Imagem</label></div></div>
+            </div>
+          </div>
+          <div class="section-card"><h2>Interações públicas (opcional)</h2><p>Use a média aproximada das últimas cinco publicações. Não é necessário enviar prints.</p>
+            <div class="form-grid">
+              <div class="field"><label for="avg-likes">MÉDIA DE CURTIDAS</label><input id="avg-likes" type="number" min="0" step="1" placeholder="Ex.: 85"></div>
+              <div class="field"><label for="avg-comments">MÉDIA DE COMENTÁRIOS</label><input id="avg-comments" type="number" min="0" step="1" placeholder="Ex.: 6"></div>
+            </div>
+          </div>
+          <p class="form-error" id="manual-error" role="alert"></p>
+          <div class="form-actions"><button class="secondary" type="button" data-action="back-start">← Alterar perfil</button><button class="primary" type="submit">Gerar diagnóstico <span class="arrow">↗</span></button></div>
+        </form>
+      </section>`;
+    document.getElementById("audit-form").addEventListener("submit",e=>{e.preventDefault();generateReport();});
+  }
+  function bioHasCTA(text){return /\b(chame|fale|clique|agende|compre|peça|peca|solicite|orçamento|orcamento|whatsapp|direct|contato|conheça|conheca|acesse|reserve|marque|confira|link)\b/i.test(text||"");}
+  function bioHasOffer(text){return /\b(oferecemos|especialista|especialistas|serviços|servicos|produto|produtos|loja|consultoria|atendimento|clínica|clinica|restaurante|imóveis|imoveis|barbearia|beleza|moda|fotografia|marketing|aulas|cursos|soluções|solucoes|profissional|empresa|marca|delivery|agenda|vendas)\b/i.test(text||"");}
+  function scoreIdentity(d){
+    const parts=[];if(d.displayName){parts.push({score:d.displayName.trim().length>=3?100:35,weight:20});}
+    if(d.bioConfirmed){const b=d.bio.trim();let s=0;if(b.length>=50)s+=30;else if(b.length>0)s+=15;if(bioHasOffer(b))s+=35;if(bioHasCTA(b))s+=35;parts.push({score:Math.min(100,s),weight:65});}
+    if(d.avatarKnown){parts.push({score:d.hasAvatar?100:0,weight:15});}
+    return category(parts);
+  }
+  function scoreConversion(d){
+    const parts=[];if(d.linkStatus!=="unknown")parts.push({score:d.linkStatus==="yes"?100:0,weight:45});
+    if(d.contactStatus!=="unknown")parts.push({score:d.contactStatus==="yes"?100:0,weight:40});
+    if(d.bioConfirmed)parts.push({score:bioHasCTA(d.bio)?100:0,weight:15});
+    return category(parts);
+  }
+  function scoreContent(d){
+    const parts=[];if(d.postsMonth!=null){const n=d.postsMonth;const s=n===0?0:n<4?25:n<8?55:n<12?80:100;parts.push({score:s,weight:60});}
+    if(d.formats.length){const s=d.formats.length===1?35:d.formats.length===2?70:100;parts.push({score:s,weight:40});}
+    return category(parts);
+  }
+  function scoreEngagement(d){
+    if(d.followers==null||d.followers===0||d.avgLikes==null||d.avgComments==null)return null;
+    const rate=((d.avgLikes+d.avgComments)/d.followers)*100;
+    const score=rate>=3?100:rate>=1.5?80:rate>=0.8?60:rate>=0.3?40:20;
+    return {score,rate,detail:"Estimativa com a média informada das últimas cinco publicações."};
+  }
+  function category(parts){if(!parts.length)return null;const w=parts.reduce((a,p)=>a+p.weight,0);return {score:Math.round(parts.reduce((a,p)=>a+p.score*p.weight,0)/w),detail:`${parts.length} critério(s) verificado(s)`};}
+  function generateReport(){
+    const d={displayName:document.getElementById("display-name").value.trim(),bio:document.getElementById("bio").value.trim(),bioConfirmed:!!document.getElementById("bio").value.trim()||!!state.profile?.known?.biography,followers:num(document.getElementById("followers").value),linkStatus:document.getElementById("link-status").value,contactStatus:document.getElementById("contact-status").value,postsMonth:num(document.getElementById("posts-month").value),formats:[...document.querySelectorAll('input[name="format"]:checked')].map(x=>x.value),avgLikes:num(document.getElementById("avg-likes").value),avgComments:num(document.getElementById("avg-comments").value),avatarKnown:!!state.profile?.known?.profileImage,hasAvatar:!!state.profile?.profileImage};
+    if(!d.displayName&&!d.bioConfirmed&&d.linkStatus==="unknown"&&d.postsMonth==null&&d.followers==null){document.getElementById("manual-error").textContent="Preencha pelo menos a biografia, o nome ou algum dado de conteúdo para gerar uma análise útil.";return;}
+    const cats=[{key:"identity",name:"Perfil e apresentação",weight:25,result:scoreIdentity(d)},{key:"conversion",name:"Conversão e contato",weight:25,result:scoreConversion(d)},{key:"content",name:"Conteúdo e frequência",weight:30,result:scoreContent(d)},{key:"engagement",name:"Interações",weight:20,result:scoreEngagement(d)}];
+    const available=cats.filter(c=>c.result);const coverage=available.reduce((a,c)=>a+c.weight,0);const total=coverage?Math.round(available.reduce((a,c)=>a+c.result.score*c.weight,0)/coverage):null;
+    const recs=makeRecommendations(d);state.report={d,cats,coverage,total,recs,profile:state.profile};renderResult();
+  }
+  function makeRecommendations(d){
+    const out=[];const add=(title,body,action,level="medium")=>out.push({title,body,action,level});
+    if(d.bioConfirmed){if(d.bio.length<50)add("Aproveite melhor a biografia","A descrição está curta e pode explicar melhor o que você oferece e para quem.","Inclua atividade, público atendido e principal diferencial.","high");if(!bioHasOffer(d.bio))add("Deixe sua oferta mais explícita","A biografia não apresenta com clareza uma atividade, produto ou serviço identificável pelas palavras utilizadas.","Diga objetivamente o que a marca faz ou vende.","high");if(!bioHasCTA(d.bio))add("Inclua uma chamada para ação","Não identificamos um convite claro para o próximo passo.","Oriente a pessoa a chamar, agendar, comprar ou acessar o link.","high");}
+    if(d.linkStatus==="no")add("Crie um caminho de conversão","O perfil foi marcado como sem link na bio.","Inclua uma página simples com contato, catálogo, agendamento ou orçamento.","high");
+    if(d.contactStatus==="no")add("Facilite o primeiro contato","O perfil não apresenta uma chamada ou canal de contato suficientemente claro.","Destaque WhatsApp, Direct, agendamento ou outro canal principal.","high");
+    if(d.postsMonth!=null&&d.postsMonth<4)add("Aumente a regularidade","Foram informadas menos de quatro publicações nos últimos 30 dias.","Defina uma frequência realista e mantenha um calendário simples.","medium");
+    if(d.formats.length===1)add("Varie os formatos","Foi informado o uso de apenas um formato de publicação.","Teste Reels, carrosséis e imagens conforme o objetivo de cada conteúdo.","medium");
+    if(d.formats.length===0)add("Observe a variedade de formatos","Não foram informados os formatos usados nas publicações recentes.","Confira se o perfil combina Reels, carrosséis e imagens quando fizer sentido.","low");
+    const eng=scoreEngagement(d);if(eng&&eng.rate<0.8)add("Investigue a resposta do público","A taxa estimada de interação da amostra ficou abaixo de 0,8%.","Compare temas, formatos e chamadas para ação; a taxa isolada não explica a causa.","medium");
+    if(!d.followers||d.avgLikes==null||d.avgComments==null)add("Complete a leitura de interações","Não há dados suficientes para estimar a taxa de interação.","Se quiser aprofundar, informe seguidores e médias de curtidas e comentários.","low");
+    if(!out.length)add("Mantenha a consistência e acompanhe os resultados","Os dados preenchidos não apontaram falhas evidentes nos critérios avaliados.","Revise a biografia e o desempenho das publicações periodicamente.","low");
+    return out.slice(0,6);
+  }
+  function renderResult(){
+    const r=state.report,d=r.d;const hasScore=r.total!=null&&r.coverage>=50;const score=hasScore?r.total:null;const status=score==null?"Dados insuficientes para uma nota geral":score>=80?"Boa estrutura nos critérios avaliados":score>=60?"Há oportunidades de melhoria":"Há pontos importantes para ajustar";
+    const catsHtml=r.cats.map(c=>`<div class="cat"><div class="cat-top"><span>${c.name}</span><b>${c.result?`${c.result.score}/100`:"N/D"}</b></div><div class="bar"><i style="width:${c.result?c.result.score:0}%"></i></div><small>${c.result?esc(c.result.detail):"Não foi possível verificar com os dados enviados"}</small></div>`).join("");
+    const recHtml=r.recs.map((x,i)=>`<article class="rec"><div class="rec-num">${i+1}</div><div><h3>${esc(x.title)}</h3><p>${esc(x.body)}<br><strong>Próximo passo:</strong> ${esc(x.action)}</p></div><span class="severity ${x.level}">${x.level==="high"?"Prioritário":x.level==="medium"?"Atenção":"Observar"}</span></article>`).join("");
+    const engagement=scoreEngagement(d);
+    content.innerHTML=`
+      <section>
+        <p class="eyebrow">03 / Resultado do Raio-X</p>
+        <div class="result-head"><div><h1>Diagnóstico de <em>@${esc(state.username)}</em></h1><p class="result-sub">${esc(status)}. Esta leitura considera somente os dados públicos encontrados e as informações complementadas por você.</p></div><div class="score-ring" style="--score:${score??0}%"><div class="score-inner">${score??"—"}<small>${score==null?"sem nota":"de 100"}</small></div></div></div>
+        <div class="coverage"><strong>Cobertura da análise: ${r.coverage}%.</strong> ${r.coverage<50?"Ainda há poucos dados confirmados para uma nota geral confiável.":"A nota considera apenas as categorias com dados suficientes; itens não verificados não recebem nota zero."} ${r.profile?"A coleta automática foi tentada.":"A análise foi feita com informações preenchidas manualmente."}</div>
+        <div class="metrics"><div class="metric"><strong>${d.followers==null?"—":formatNum(d.followers)}</strong><span>Seguidores</span></div><div class="metric"><strong>${d.postsMonth==null?"—":formatNum(d.postsMonth)}</strong><span>Posts / 30 dias</span></div><div class="metric"><strong>${engagement?engagement.rate.toFixed(2).replace(".",",")+"%":"—"}</strong><span>Interação estimada</span></div><div class="metric"><strong>${d.linkStatus==="yes"?"Sim":d.linkStatus==="no"?"Não":"—"}</strong><span>Link na bio</span></div></div>
+        <div class="section-title">Pontuação por categoria <small>Critérios verificáveis</small></div><div class="category-grid">${catsHtml}</div>
+        <div class="section-title">O que merece atenção <small>${r.recs.length} recomendações</small></div><div class="rec-list">${recHtml}</div>
+        <div class="gold-panel"><h2>Diagnóstico é o começo. Estratégia é o próximo passo.</h2><p>Use os achados para organizar sua presença digital, fortalecer o posicionamento e transformar visitas em oportunidades de relacionamento e negócio.</p><a class="primary" href="${CONTACT_URL}" target="_blank" rel="noopener noreferrer">Conhecer o trabalho de Wendell Soares ↗</a></div>
+        <p class="disclaimer">Este relatório é indicativo e não representa avaliação oficial do Instagram. A coleta automática depende da disponibilidade da página pública e pode ser limitada. A taxa de interação é uma estimativa baseada nos números informados, não considera alcance, salvamentos, compartilhamentos ou impressões. Os dados não são armazenados por esta ferramenta.</p>
+        <div class="result-actions"><button class="secondary" data-action="print">Salvar relatório em PDF</button><button class="secondary" data-action="restart">Analisar outro perfil</button></div>
+      </section>`;
+  }
+  document.addEventListener("click",e=>{const b=e.target.closest("[data-action]");if(!b)return;const a=b.dataset.action;if(a==="start")renderStart();if(a==="home")renderWelcome();if(a==="scan")startScan();if(a==="back-start")renderStart();if(a==="print")window.print();if(a==="restart"){state.profile=null;state.report=null;state.username="";renderStart();}});
+  renderWelcome();
+})();
+</script>
+</body>
+</html>
